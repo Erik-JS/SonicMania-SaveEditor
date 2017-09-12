@@ -31,16 +31,16 @@ namespace SonicMania_SaveEditor
             _medalButtons[0] = btnBS1;
             int x = 0;
             Size medalButtonSize = new Size(32, 32);
-            for (int a = 0; a < 8; a++)
+            for (int a = 0; a < 4; a++)
             {
-                for (int b = 0; b < 4; b++)
+                for (int b = 0; b < 8; b++)
                 {
                     if (x != 0) // we already have the first button
                     {
                         _medalButtons[x] = new Button();
                         _medalButtons[x].Size = medalButtonSize;
                         _medalButtons[x].BackColor = Color.White;
-                        _medalButtons[x].Location = new Point(a * 32 + btnBS1.Location.X, b * 32 + btnBS1.Location.Y);
+                        _medalButtons[x].Location = new Point(b * 32 + btnBS1.Location.X, a * 32 + btnBS1.Location.Y);
                         tabPage2.Controls.Add(_medalButtons[x]);
                     }
                     x++;
