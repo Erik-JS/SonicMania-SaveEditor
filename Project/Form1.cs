@@ -161,6 +161,7 @@ namespace SonicMania_SaveEditor
             if (!Savedata.SaveToFile(sfd.FileName))
                 return;
             _lastHandledFile = sfd.FileName;
+            MessageBox.Show("Done.\n\n" + _lastHandledFile, "Saved", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
