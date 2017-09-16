@@ -36,6 +36,7 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -80,7 +81,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnBS1 = new System.Windows.Forms.Button();
             this.lblBlueSpheres = new System.Windows.Forms.Label();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -151,6 +151,13 @@
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -202,7 +209,7 @@
             this.groupBox2.Location = new System.Drawing.Point(49, 14);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(417, 49);
-            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select slot";
             // 
@@ -292,7 +299,7 @@
             this.btnResetGR.Location = new System.Drawing.Point(285, 291);
             this.btnResetGR.Name = "btnResetGR";
             this.btnResetGR.Size = new System.Drawing.Size(121, 27);
-            this.btnResetGR.TabIndex = 20;
+            this.btnResetGR.TabIndex = 16;
             this.btnResetGR.Text = "Reset giant rings";
             this.btnResetGR.UseVisualStyleBackColor = true;
             this.btnResetGR.Click += new System.EventHandler(this.btnResetGR_Click);
@@ -312,7 +319,7 @@
             this.cboSpecialStage.Location = new System.Drawing.Point(285, 264);
             this.cboSpecialStage.Name = "cboSpecialStage";
             this.cboSpecialStage.Size = new System.Drawing.Size(121, 21);
-            this.cboSpecialStage.TabIndex = 19;
+            this.cboSpecialStage.TabIndex = 15;
             this.cboSpecialStage.SelectedIndexChanged += new System.EventHandler(this.cboSpecialStage_SelectedIndexChanged);
             // 
             // label8
@@ -321,7 +328,7 @@
             this.label8.Location = new System.Drawing.Point(282, 248);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 13);
-            this.label8.TabIndex = 18;
+            this.label8.TabIndex = 14;
             this.label8.Text = "Next Special Stage:";
             // 
             // groupBox1
@@ -336,7 +343,7 @@
             this.groupBox1.Location = new System.Drawing.Point(79, 248);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(171, 44);
-            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chaos Emeralds";
             // 
@@ -415,7 +422,7 @@
             this.cboCharacter.Location = new System.Drawing.Point(79, 149);
             this.cboCharacter.Name = "cboCharacter";
             this.cboCharacter.Size = new System.Drawing.Size(121, 21);
-            this.cboCharacter.TabIndex = 16;
+            this.cboCharacter.TabIndex = 4;
             this.cboCharacter.SelectedIndexChanged += new System.EventHandler(this.cboCharacter_SelectedIndexChanged);
             // 
             // label7
@@ -424,7 +431,7 @@
             this.label7.Location = new System.Drawing.Point(76, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 15;
+            this.label7.TabIndex = 3;
             this.label7.Text = "Character:";
             // 
             // cboState
@@ -438,7 +445,7 @@
             this.cboState.Location = new System.Drawing.Point(79, 98);
             this.cboState.Name = "cboState";
             this.cboState.Size = new System.Drawing.Size(121, 21);
-            this.cboState.TabIndex = 14;
+            this.cboState.TabIndex = 2;
             this.cboState.SelectedIndexChanged += new System.EventHandler(this.cboState_SelectedIndexChanged);
             // 
             // label6
@@ -447,7 +454,7 @@
             this.label6.Location = new System.Drawing.Point(76, 82);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 13;
+            this.label6.TabIndex = 1;
             this.label6.Text = "State:";
             // 
             // txtLives
@@ -455,7 +462,7 @@
             this.txtLives.Location = new System.Drawing.Point(285, 99);
             this.txtLives.Name = "txtLives";
             this.txtLives.Size = new System.Drawing.Size(125, 20);
-            this.txtLives.TabIndex = 12;
+            this.txtLives.TabIndex = 8;
             this.txtLives.TextChanged += new System.EventHandler(this.txtLives_TextChanged);
             this.txtLives.Leave += new System.EventHandler(this.txtLives_Leave);
             // 
@@ -480,7 +487,7 @@
             this.cboZone.Location = new System.Drawing.Point(79, 200);
             this.cboZone.Name = "cboZone";
             this.cboZone.Size = new System.Drawing.Size(121, 21);
-            this.cboZone.TabIndex = 10;
+            this.cboZone.TabIndex = 6;
             this.cboZone.SelectedIndexChanged += new System.EventHandler(this.cboZone_SelectedIndexChanged);
             // 
             // label5
@@ -489,7 +496,7 @@
             this.label5.Location = new System.Drawing.Point(76, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 5;
             this.label5.Text = "Zone:";
             // 
             // txtTargetScore
@@ -497,7 +504,7 @@
             this.txtTargetScore.Location = new System.Drawing.Point(285, 201);
             this.txtTargetScore.Name = "txtTargetScore";
             this.txtTargetScore.Size = new System.Drawing.Size(125, 20);
-            this.txtTargetScore.TabIndex = 8;
+            this.txtTargetScore.TabIndex = 12;
             this.txtTargetScore.TextChanged += new System.EventHandler(this.txtTargetScore_TextChanged);
             this.txtTargetScore.Leave += new System.EventHandler(this.txtTargetScore_Leave);
             // 
@@ -507,7 +514,7 @@
             this.label4.Location = new System.Drawing.Point(282, 184);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(164, 13);
-            this.label4.TabIndex = 7;
+            this.label4.TabIndex = 11;
             this.label4.Text = "Target score for next 1UP bonus:";
             // 
             // txtScore
@@ -515,7 +522,7 @@
             this.txtScore.Location = new System.Drawing.Point(285, 150);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(125, 20);
-            this.txtScore.TabIndex = 6;
+            this.txtScore.TabIndex = 10;
             this.txtScore.TextChanged += new System.EventHandler(this.txtScore_TextChanged);
             this.txtScore.Leave += new System.EventHandler(this.txtScore_Leave);
             // 
@@ -525,7 +532,7 @@
             this.label3.Location = new System.Drawing.Point(282, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 5;
+            this.label3.TabIndex = 9;
             this.label3.Text = "Score:";
             // 
             // label2
@@ -534,7 +541,7 @@
             this.label2.Location = new System.Drawing.Point(282, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Lives:";
             // 
             // tabPage2
@@ -561,7 +568,7 @@
             this.btnAllGold.Location = new System.Drawing.Point(285, 310);
             this.btnAllGold.Name = "btnAllGold";
             this.btnAllGold.Size = new System.Drawing.Size(90, 27);
-            this.btnAllGold.TabIndex = 8;
+            this.btnAllGold.TabIndex = 39;
             this.btnAllGold.Text = "All gold";
             this.btnAllGold.UseVisualStyleBackColor = true;
             this.btnAllGold.Click += new System.EventHandler(this.btnAllGold_Click);
@@ -571,7 +578,7 @@
             this.btnAllSilver.Location = new System.Drawing.Point(285, 284);
             this.btnAllSilver.Name = "btnAllSilver";
             this.btnAllSilver.Size = new System.Drawing.Size(90, 27);
-            this.btnAllSilver.TabIndex = 7;
+            this.btnAllSilver.TabIndex = 38;
             this.btnAllSilver.Text = "All silver";
             this.btnAllSilver.UseVisualStyleBackColor = true;
             this.btnAllSilver.Click += new System.EventHandler(this.btnAllSilver_Click);
@@ -581,7 +588,7 @@
             this.btnAllBlank.Location = new System.Drawing.Point(285, 261);
             this.btnAllBlank.Name = "btnAllBlank";
             this.btnAllBlank.Size = new System.Drawing.Size(90, 27);
-            this.btnAllBlank.TabIndex = 6;
+            this.btnAllBlank.TabIndex = 37;
             this.btnAllBlank.Text = "All blank";
             this.btnAllBlank.UseVisualStyleBackColor = true;
             this.btnAllBlank.Click += new System.EventHandler(this.btnAllBlank_Click);
@@ -592,7 +599,7 @@
             this.txtGold.Location = new System.Drawing.Point(163, 305);
             this.txtGold.Name = "txtGold";
             this.txtGold.Size = new System.Drawing.Size(99, 20);
-            this.txtGold.TabIndex = 5;
+            this.txtGold.TabIndex = 36;
             // 
             // label9
             // 
@@ -600,7 +607,7 @@
             this.label9.Location = new System.Drawing.Point(121, 308);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
-            this.label9.TabIndex = 4;
+            this.label9.TabIndex = 35;
             this.label9.Text = "Gold:";
             // 
             // txtSilver
@@ -609,7 +616,7 @@
             this.txtSilver.Location = new System.Drawing.Point(163, 281);
             this.txtSilver.Name = "txtSilver";
             this.txtSilver.Size = new System.Drawing.Size(99, 20);
-            this.txtSilver.TabIndex = 3;
+            this.txtSilver.TabIndex = 34;
             // 
             // label1
             // 
@@ -617,7 +624,7 @@
             this.label1.Location = new System.Drawing.Point(121, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 33;
             this.label1.Text = "Silver:";
             // 
             // btnBS1
@@ -637,13 +644,6 @@
             this.lblBlueSpheres.Size = new System.Drawing.Size(471, 52);
             this.lblBlueSpheres.TabIndex = 0;
             this.lblBlueSpheres.Text = resources.GetString("lblBlueSpheres.Text");
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "&About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // Form1
             // 

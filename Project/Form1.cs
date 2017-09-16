@@ -43,6 +43,7 @@ namespace SonicMania_SaveEditor
                         _medalButtons[x].Location = new Point(b * 32 + btnBS1.Location.X, a * 32 + btnBS1.Location.Y);
                         tabPage2.Controls.Add(_medalButtons[x]);
                     }
+                    _medalButtons[x].TabIndex = 1 + x;
                     x++;
                 }
             }
