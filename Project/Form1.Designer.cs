@@ -81,6 +81,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnBS1 = new System.Windows.Forms.Button();
             this.lblBlueSpheres = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtContinues = new System.Windows.Forms.TextBox();
+            this.opt11 = new System.Windows.Forms.RadioButton();
+            this.opt12 = new System.Windows.Forms.RadioButton();
+            this.opt13 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnChar1 = new System.Windows.Forms.Button();
+            this.btnChar2 = new System.Windows.Forms.Button();
+            this.btnChar3 = new System.Windows.Forms.Button();
+            this.btnChar4 = new System.Windows.Forms.Button();
+            this.btnChar5 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -171,6 +183,13 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnChar5);
+            this.tabPage1.Controls.Add(this.btnChar4);
+            this.tabPage1.Controls.Add(this.btnChar3);
+            this.tabPage1.Controls.Add(this.btnChar2);
+            this.tabPage1.Controls.Add(this.btnChar1);
+            this.tabPage1.Controls.Add(this.txtContinues);
+            this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.btnResetGR);
             this.tabPage1.Controls.Add(this.cboSpecialStage);
@@ -198,6 +217,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.opt13);
+            this.groupBox2.Controls.Add(this.opt12);
+            this.groupBox2.Controls.Add(this.opt11);
             this.groupBox2.Controls.Add(this.opt8);
             this.groupBox2.Controls.Add(this.opt7);
             this.groupBox2.Controls.Add(this.opt6);
@@ -208,7 +232,7 @@
             this.groupBox2.Controls.Add(this.opt1);
             this.groupBox2.Location = new System.Drawing.Point(49, 14);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(417, 49);
+            this.groupBox2.Size = new System.Drawing.Size(421, 64);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select slot";
@@ -216,7 +240,7 @@
             // opt8
             // 
             this.opt8.AutoSize = true;
-            this.opt8.Location = new System.Drawing.Point(30, 19);
+            this.opt8.Location = new System.Drawing.Point(15, 19);
             this.opt8.Name = "opt8";
             this.opt8.Size = new System.Drawing.Size(14, 13);
             this.opt8.TabIndex = 0;
@@ -226,7 +250,7 @@
             // opt7
             // 
             this.opt7.AutoSize = true;
-            this.opt7.Location = new System.Drawing.Point(80, 19);
+            this.opt7.Location = new System.Drawing.Point(46, 19);
             this.opt7.Name = "opt7";
             this.opt7.Size = new System.Drawing.Size(14, 13);
             this.opt7.TabIndex = 1;
@@ -236,7 +260,7 @@
             // opt6
             // 
             this.opt6.AutoSize = true;
-            this.opt6.Location = new System.Drawing.Point(130, 19);
+            this.opt6.Location = new System.Drawing.Point(77, 19);
             this.opt6.Name = "opt6";
             this.opt6.Size = new System.Drawing.Size(14, 13);
             this.opt6.TabIndex = 2;
@@ -246,7 +270,7 @@
             // opt5
             // 
             this.opt5.AutoSize = true;
-            this.opt5.Location = new System.Drawing.Point(180, 19);
+            this.opt5.Location = new System.Drawing.Point(108, 19);
             this.opt5.Name = "opt5";
             this.opt5.Size = new System.Drawing.Size(14, 13);
             this.opt5.TabIndex = 3;
@@ -256,7 +280,7 @@
             // opt4
             // 
             this.opt4.AutoSize = true;
-            this.opt4.Location = new System.Drawing.Point(230, 19);
+            this.opt4.Location = new System.Drawing.Point(139, 19);
             this.opt4.Name = "opt4";
             this.opt4.Size = new System.Drawing.Size(14, 13);
             this.opt4.TabIndex = 4;
@@ -266,7 +290,7 @@
             // opt3
             // 
             this.opt3.AutoSize = true;
-            this.opt3.Location = new System.Drawing.Point(280, 19);
+            this.opt3.Location = new System.Drawing.Point(170, 19);
             this.opt3.Name = "opt3";
             this.opt3.Size = new System.Drawing.Size(14, 13);
             this.opt3.TabIndex = 5;
@@ -276,7 +300,7 @@
             // opt2
             // 
             this.opt2.AutoSize = true;
-            this.opt2.Location = new System.Drawing.Point(330, 19);
+            this.opt2.Location = new System.Drawing.Point(201, 19);
             this.opt2.Name = "opt2";
             this.opt2.Size = new System.Drawing.Size(14, 13);
             this.opt2.TabIndex = 6;
@@ -287,7 +311,7 @@
             // 
             this.opt1.AutoSize = true;
             this.opt1.Checked = true;
-            this.opt1.Location = new System.Drawing.Point(380, 19);
+            this.opt1.Location = new System.Drawing.Point(232, 19);
             this.opt1.Name = "opt1";
             this.opt1.Size = new System.Drawing.Size(14, 13);
             this.opt1.TabIndex = 7;
@@ -299,7 +323,7 @@
             this.btnResetGR.Location = new System.Drawing.Point(285, 291);
             this.btnResetGR.Name = "btnResetGR";
             this.btnResetGR.Size = new System.Drawing.Size(121, 27);
-            this.btnResetGR.TabIndex = 16;
+            this.btnResetGR.TabIndex = 18;
             this.btnResetGR.Text = "Reset giant rings";
             this.btnResetGR.UseVisualStyleBackColor = true;
             this.btnResetGR.Click += new System.EventHandler(this.btnResetGR_Click);
@@ -319,7 +343,7 @@
             this.cboSpecialStage.Location = new System.Drawing.Point(285, 264);
             this.cboSpecialStage.Name = "cboSpecialStage";
             this.cboSpecialStage.Size = new System.Drawing.Size(121, 21);
-            this.cboSpecialStage.TabIndex = 15;
+            this.cboSpecialStage.TabIndex = 17;
             this.cboSpecialStage.SelectedIndexChanged += new System.EventHandler(this.cboSpecialStage_SelectedIndexChanged);
             // 
             // label8
@@ -328,7 +352,7 @@
             this.label8.Location = new System.Drawing.Point(282, 248);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 13);
-            this.label8.TabIndex = 14;
+            this.label8.TabIndex = 16;
             this.label8.Text = "Next Special Stage:";
             // 
             // groupBox1
@@ -340,10 +364,10 @@
             this.groupBox1.Controls.Add(this.chkEmerald3);
             this.groupBox1.Controls.Add(this.chkEmerald2);
             this.groupBox1.Controls.Add(this.chkEmerald1);
-            this.groupBox1.Location = new System.Drawing.Point(79, 248);
+            this.groupBox1.Location = new System.Drawing.Point(64, 264);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(171, 44);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chaos Emeralds";
             // 
@@ -418,8 +442,10 @@
             "Sonic and Tails",
             "Sonic",
             "Tails",
-            "Knuckles"});
-            this.cboCharacter.Location = new System.Drawing.Point(79, 149);
+            "Knuckles",
+            "Mighty",
+            "Ray"});
+            this.cboCharacter.Location = new System.Drawing.Point(79, 162);
             this.cboCharacter.Name = "cboCharacter";
             this.cboCharacter.Size = new System.Drawing.Size(121, 21);
             this.cboCharacter.TabIndex = 4;
@@ -428,7 +454,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(76, 133);
+            this.label7.Location = new System.Drawing.Point(76, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 3;
@@ -442,7 +468,7 @@
             "New",
             "Continue from zone",
             "Clear"});
-            this.cboState.Location = new System.Drawing.Point(79, 98);
+            this.cboState.Location = new System.Drawing.Point(79, 110);
             this.cboState.Name = "cboState";
             this.cboState.Size = new System.Drawing.Size(121, 21);
             this.cboState.TabIndex = 2;
@@ -451,7 +477,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(76, 82);
+            this.label6.Location = new System.Drawing.Point(76, 94);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 1;
@@ -459,9 +485,9 @@
             // 
             // txtLives
             // 
-            this.txtLives.Location = new System.Drawing.Point(285, 99);
+            this.txtLives.Location = new System.Drawing.Point(292, 110);
             this.txtLives.Name = "txtLives";
-            this.txtLives.Size = new System.Drawing.Size(125, 20);
+            this.txtLives.Size = new System.Drawing.Size(58, 20);
             this.txtLives.TabIndex = 8;
             this.txtLives.TextChanged += new System.EventHandler(this.txtLives_TextChanged);
             this.txtLives.Leave += new System.EventHandler(this.txtLives_Leave);
@@ -484,7 +510,7 @@
             "Metallic Madness",
             "Titanic Monarch",
             "Egg Reverie"});
-            this.cboZone.Location = new System.Drawing.Point(79, 200);
+            this.cboZone.Location = new System.Drawing.Point(79, 217);
             this.cboZone.Name = "cboZone";
             this.cboZone.Size = new System.Drawing.Size(121, 21);
             this.cboZone.TabIndex = 6;
@@ -493,7 +519,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 184);
+            this.label5.Location = new System.Drawing.Point(76, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 5;
@@ -501,44 +527,44 @@
             // 
             // txtTargetScore
             // 
-            this.txtTargetScore.Location = new System.Drawing.Point(285, 201);
+            this.txtTargetScore.Location = new System.Drawing.Point(289, 217);
             this.txtTargetScore.Name = "txtTargetScore";
             this.txtTargetScore.Size = new System.Drawing.Size(125, 20);
-            this.txtTargetScore.TabIndex = 12;
+            this.txtTargetScore.TabIndex = 14;
             this.txtTargetScore.TextChanged += new System.EventHandler(this.txtTargetScore_TextChanged);
             this.txtTargetScore.Leave += new System.EventHandler(this.txtTargetScore_Leave);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(282, 184);
+            this.label4.Location = new System.Drawing.Point(286, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(164, 13);
-            this.label4.TabIndex = 11;
+            this.label4.TabIndex = 13;
             this.label4.Text = "Target score for next 1UP bonus:";
             // 
             // txtScore
             // 
-            this.txtScore.Location = new System.Drawing.Point(285, 150);
+            this.txtScore.Location = new System.Drawing.Point(289, 162);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(125, 20);
-            this.txtScore.TabIndex = 10;
+            this.txtScore.TabIndex = 12;
             this.txtScore.TextChanged += new System.EventHandler(this.txtScore_TextChanged);
             this.txtScore.Leave += new System.EventHandler(this.txtScore_Leave);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(282, 133);
+            this.label3.Location = new System.Drawing.Point(286, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 9;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Score:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 82);
+            this.label2.Location = new System.Drawing.Point(289, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 7;
@@ -645,6 +671,117 @@
             this.lblBlueSpheres.TabIndex = 0;
             this.lblBlueSpheres.Text = resources.GetString("lblBlueSpheres.Text");
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(353, 94);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 13);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Continues:";
+            // 
+            // txtContinues
+            // 
+            this.txtContinues.Location = new System.Drawing.Point(356, 110);
+            this.txtContinues.Name = "txtContinues";
+            this.txtContinues.Size = new System.Drawing.Size(58, 20);
+            this.txtContinues.TabIndex = 10;
+            this.txtContinues.TextChanged += new System.EventHandler(this.txtContinues_TextChanged);
+            this.txtContinues.Leave += new System.EventHandler(this.txtContinues_Leave);
+            // 
+            // opt11
+            // 
+            this.opt11.AutoSize = true;
+            this.opt11.Location = new System.Drawing.Point(320, 19);
+            this.opt11.Name = "opt11";
+            this.opt11.Size = new System.Drawing.Size(14, 13);
+            this.opt11.TabIndex = 8;
+            this.opt11.TabStop = true;
+            this.opt11.UseVisualStyleBackColor = true;
+            // 
+            // opt12
+            // 
+            this.opt12.AutoSize = true;
+            this.opt12.Location = new System.Drawing.Point(351, 19);
+            this.opt12.Name = "opt12";
+            this.opt12.Size = new System.Drawing.Size(14, 13);
+            this.opt12.TabIndex = 9;
+            this.opt12.TabStop = true;
+            this.opt12.UseVisualStyleBackColor = true;
+            // 
+            // opt13
+            // 
+            this.opt13.AutoSize = true;
+            this.opt13.Location = new System.Drawing.Point(382, 19);
+            this.opt13.Name = "opt13";
+            this.opt13.Size = new System.Drawing.Size(14, 13);
+            this.opt13.TabIndex = 10;
+            this.opt13.TabStop = true;
+            this.opt13.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(210, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Mania";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(316, 40);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Encore";
+            // 
+            // btnChar1
+            // 
+            this.btnChar1.Location = new System.Drawing.Point(79, 162);
+            this.btnChar1.Name = "btnChar1";
+            this.btnChar1.Size = new System.Drawing.Size(30, 28);
+            this.btnChar1.TabIndex = 19;
+            this.btnChar1.Text = "1";
+            this.btnChar1.UseVisualStyleBackColor = true;
+            // 
+            // btnChar2
+            // 
+            this.btnChar2.Location = new System.Drawing.Point(110, 162);
+            this.btnChar2.Name = "btnChar2";
+            this.btnChar2.Size = new System.Drawing.Size(30, 28);
+            this.btnChar2.TabIndex = 20;
+            this.btnChar2.Text = "2";
+            this.btnChar2.UseVisualStyleBackColor = true;
+            // 
+            // btnChar3
+            // 
+            this.btnChar3.Location = new System.Drawing.Point(141, 162);
+            this.btnChar3.Name = "btnChar3";
+            this.btnChar3.Size = new System.Drawing.Size(30, 28);
+            this.btnChar3.TabIndex = 21;
+            this.btnChar3.Text = "3";
+            this.btnChar3.UseVisualStyleBackColor = true;
+            // 
+            // btnChar4
+            // 
+            this.btnChar4.Location = new System.Drawing.Point(172, 162);
+            this.btnChar4.Name = "btnChar4";
+            this.btnChar4.Size = new System.Drawing.Size(30, 28);
+            this.btnChar4.TabIndex = 22;
+            this.btnChar4.Text = "4";
+            this.btnChar4.UseVisualStyleBackColor = true;
+            // 
+            // btnChar5
+            // 
+            this.btnChar5.Location = new System.Drawing.Point(203, 162);
+            this.btnChar5.Name = "btnChar5";
+            this.btnChar5.Size = new System.Drawing.Size(30, 28);
+            this.btnChar5.TabIndex = 23;
+            this.btnChar5.Text = "5";
+            this.btnChar5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -729,6 +866,18 @@
         private System.Windows.Forms.Button btnAllSilver;
         private System.Windows.Forms.Button btnAllBlank;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtContinues;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton opt13;
+        private System.Windows.Forms.RadioButton opt12;
+        private System.Windows.Forms.RadioButton opt11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnChar5;
+        private System.Windows.Forms.Button btnChar4;
+        private System.Windows.Forms.Button btnChar3;
+        private System.Windows.Forms.Button btnChar2;
+        private System.Windows.Forms.Button btnChar1;
     }
 }
 

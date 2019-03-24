@@ -137,6 +137,15 @@ namespace SonicMania_SaveEditor
                 Content[(0x400 * slot) + 0x70] &= (byte)~(emeraldActive);
         }
 
+        public static int GetContinues(int slot)
+        {
+            return GetInt32((0x400 * slot) + 0x74);
+        }
+        public static void SetContinues(int slot, int value)
+        {
+            SetInt32((0x400 * slot) + 0x74, value);
+        }
+
         public static int GetNextSpecialStage(int slot)
         {
             return GetInt32((0x400 * slot) + 0x7C);
@@ -153,6 +162,51 @@ namespace SonicMania_SaveEditor
         public static bool WasGiantRingUsedInCurrentZone(int slot)
         {
             return GetInt32((0x400 * slot) + 0x80) != 0;
+        }
+
+        public static int[] GetEncoreCharacters(int slot)
+        {
+            byte[] characters = new byte[5];
+            uint backrowchar = (uint)GetInt32((0x400 * slot) + 0x10C);
+            uint frontrowchar = (uint)GetInt32((0x400 * slot) + 0x110);
+            characters[0] = (byte)frontrowchar;
+            characters[1] = (byte)(frontrowchar >> 8);
+            characters[2] = (byte)backrowchar;
+            characters[3] = (byte)(backrowchar >> 8);
+            characters[4] = (byte)(backrowchar >> 16);
+            List<int> lstRes = new List<int>();
+            foreach (var b in characters)
+            {
+                lstRes.Add(GetEncoreCharacterInt(b));
+            }
+            return lstRes.ToArray();
+        }
+        private static int GetEncoreCharacterInt(byte b)
+        {
+            int res = 0;
+            while (b > 1)
+            {
+                b /= 2;
+                res++;
+            }
+            res += b;
+            return res;
+        }
+        public static void SetEncoreCharacters(int slot, int[] values)
+        {
+            byte[] bValues = new byte[5];
+            for (int i = 0; i < bValues.Length; i++)
+            {
+                bValues[i] = (values[i] == 0) ? (byte)0 : (byte)Math.Pow(2, values[i] - 1);
+            }
+            int backrowvalue = bValues[2] + bValues[3] * 256 + bValues[4] * 65536;
+            int frontrowvalue = bValues[0] + bValues[1] * 256;
+            SetInt32((0x400 * slot) + 0x10C, backrowvalue);
+            SetInt32((0x400 * slot) + 0x110, frontrowvalue);
+            int availablecharacters = 0;
+            foreach (var b in bValues)
+                availablecharacters |= b;
+            SetInt32((0x400 * slot) + 0x108, availablecharacters);
         }
 
         public static int GetSilverMedalCount()
