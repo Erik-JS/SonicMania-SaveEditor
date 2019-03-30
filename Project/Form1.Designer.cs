@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,20 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnChar5 = new System.Windows.Forms.Button();
+            this.imglstCharIcon = new System.Windows.Forms.ImageList(this.components);
+            this.btnChar4 = new System.Windows.Forms.Button();
+            this.btnChar3 = new System.Windows.Forms.Button();
+            this.btnChar2 = new System.Windows.Forms.Button();
+            this.btnChar1 = new System.Windows.Forms.Button();
+            this.txtContinues = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.opt13 = new System.Windows.Forms.RadioButton();
+            this.opt12 = new System.Windows.Forms.RadioButton();
+            this.opt11 = new System.Windows.Forms.RadioButton();
             this.opt8 = new System.Windows.Forms.RadioButton();
             this.opt7 = new System.Windows.Forms.RadioButton();
             this.opt6 = new System.Windows.Forms.RadioButton();
@@ -81,18 +95,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnBS1 = new System.Windows.Forms.Button();
             this.lblBlueSpheres = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtContinues = new System.Windows.Forms.TextBox();
-            this.opt11 = new System.Windows.Forms.RadioButton();
-            this.opt12 = new System.Windows.Forms.RadioButton();
-            this.opt13 = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnChar1 = new System.Windows.Forms.Button();
-            this.btnChar2 = new System.Windows.Forms.Button();
-            this.btnChar3 = new System.Windows.Forms.Button();
-            this.btnChar4 = new System.Windows.Forms.Button();
-            this.btnChar5 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -215,6 +217,79 @@
             this.tabPage1.Text = "Saved games";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnChar5
+            // 
+            this.btnChar5.ImageList = this.imglstCharIcon;
+            this.btnChar5.Location = new System.Drawing.Point(203, 162);
+            this.btnChar5.Name = "btnChar5";
+            this.btnChar5.Size = new System.Drawing.Size(30, 28);
+            this.btnChar5.TabIndex = 23;
+            this.btnChar5.UseVisualStyleBackColor = true;
+            // 
+            // imglstCharIcon
+            // 
+            this.imglstCharIcon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstCharIcon.ImageStream")));
+            this.imglstCharIcon.TransparentColor = System.Drawing.Color.Magenta;
+            this.imglstCharIcon.Images.SetKeyName(0, "01sonic.bmp");
+            this.imglstCharIcon.Images.SetKeyName(1, "02tails.bmp");
+            this.imglstCharIcon.Images.SetKeyName(2, "03knuckles.bmp");
+            this.imglstCharIcon.Images.SetKeyName(3, "04mighty.bmp");
+            this.imglstCharIcon.Images.SetKeyName(4, "05ray.bmp");
+            // 
+            // btnChar4
+            // 
+            this.btnChar4.ImageList = this.imglstCharIcon;
+            this.btnChar4.Location = new System.Drawing.Point(172, 162);
+            this.btnChar4.Name = "btnChar4";
+            this.btnChar4.Size = new System.Drawing.Size(30, 28);
+            this.btnChar4.TabIndex = 22;
+            this.btnChar4.UseVisualStyleBackColor = true;
+            // 
+            // btnChar3
+            // 
+            this.btnChar3.ImageList = this.imglstCharIcon;
+            this.btnChar3.Location = new System.Drawing.Point(141, 162);
+            this.btnChar3.Name = "btnChar3";
+            this.btnChar3.Size = new System.Drawing.Size(30, 28);
+            this.btnChar3.TabIndex = 21;
+            this.btnChar3.UseVisualStyleBackColor = true;
+            // 
+            // btnChar2
+            // 
+            this.btnChar2.ImageList = this.imglstCharIcon;
+            this.btnChar2.Location = new System.Drawing.Point(110, 162);
+            this.btnChar2.Name = "btnChar2";
+            this.btnChar2.Size = new System.Drawing.Size(30, 28);
+            this.btnChar2.TabIndex = 20;
+            this.btnChar2.UseVisualStyleBackColor = true;
+            // 
+            // btnChar1
+            // 
+            this.btnChar1.ImageList = this.imglstCharIcon;
+            this.btnChar1.Location = new System.Drawing.Point(79, 162);
+            this.btnChar1.Name = "btnChar1";
+            this.btnChar1.Size = new System.Drawing.Size(30, 28);
+            this.btnChar1.TabIndex = 19;
+            this.btnChar1.UseVisualStyleBackColor = true;
+            // 
+            // txtContinues
+            // 
+            this.txtContinues.Location = new System.Drawing.Point(356, 110);
+            this.txtContinues.Name = "txtContinues";
+            this.txtContinues.Size = new System.Drawing.Size(58, 20);
+            this.txtContinues.TabIndex = 10;
+            this.txtContinues.TextChanged += new System.EventHandler(this.txtContinues_TextChanged);
+            this.txtContinues.Leave += new System.EventHandler(this.txtContinues_Leave);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(353, 94);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 13);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Continues:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label12);
@@ -236,6 +311,54 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select slot";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(316, 40);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Encore";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(210, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Mania";
+            // 
+            // opt13
+            // 
+            this.opt13.AutoSize = true;
+            this.opt13.Location = new System.Drawing.Point(382, 19);
+            this.opt13.Name = "opt13";
+            this.opt13.Size = new System.Drawing.Size(14, 13);
+            this.opt13.TabIndex = 10;
+            this.opt13.TabStop = true;
+            this.opt13.UseVisualStyleBackColor = true;
+            // 
+            // opt12
+            // 
+            this.opt12.AutoSize = true;
+            this.opt12.Location = new System.Drawing.Point(351, 19);
+            this.opt12.Name = "opt12";
+            this.opt12.Size = new System.Drawing.Size(14, 13);
+            this.opt12.TabIndex = 9;
+            this.opt12.TabStop = true;
+            this.opt12.UseVisualStyleBackColor = true;
+            // 
+            // opt11
+            // 
+            this.opt11.AutoSize = true;
+            this.opt11.Location = new System.Drawing.Point(320, 19);
+            this.opt11.Name = "opt11";
+            this.opt11.Size = new System.Drawing.Size(14, 13);
+            this.opt11.TabIndex = 8;
+            this.opt11.TabStop = true;
+            this.opt11.UseVisualStyleBackColor = true;
             // 
             // opt8
             // 
@@ -320,7 +443,7 @@
             // 
             // btnResetGR
             // 
-            this.btnResetGR.Location = new System.Drawing.Point(285, 291);
+            this.btnResetGR.Location = new System.Drawing.Point(289, 297);
             this.btnResetGR.Name = "btnResetGR";
             this.btnResetGR.Size = new System.Drawing.Size(121, 27);
             this.btnResetGR.TabIndex = 18;
@@ -340,7 +463,7 @@
             "5",
             "6",
             "7"});
-            this.cboSpecialStage.Location = new System.Drawing.Point(285, 264);
+            this.cboSpecialStage.Location = new System.Drawing.Point(289, 270);
             this.cboSpecialStage.Name = "cboSpecialStage";
             this.cboSpecialStage.Size = new System.Drawing.Size(121, 21);
             this.cboSpecialStage.TabIndex = 17;
@@ -349,7 +472,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(282, 248);
+            this.label8.Location = new System.Drawing.Point(289, 254);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 13);
             this.label8.TabIndex = 16;
@@ -671,117 +794,6 @@
             this.lblBlueSpheres.TabIndex = 0;
             this.lblBlueSpheres.Text = resources.GetString("lblBlueSpheres.Text");
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(353, 94);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Continues:";
-            // 
-            // txtContinues
-            // 
-            this.txtContinues.Location = new System.Drawing.Point(356, 110);
-            this.txtContinues.Name = "txtContinues";
-            this.txtContinues.Size = new System.Drawing.Size(58, 20);
-            this.txtContinues.TabIndex = 10;
-            this.txtContinues.TextChanged += new System.EventHandler(this.txtContinues_TextChanged);
-            this.txtContinues.Leave += new System.EventHandler(this.txtContinues_Leave);
-            // 
-            // opt11
-            // 
-            this.opt11.AutoSize = true;
-            this.opt11.Location = new System.Drawing.Point(320, 19);
-            this.opt11.Name = "opt11";
-            this.opt11.Size = new System.Drawing.Size(14, 13);
-            this.opt11.TabIndex = 8;
-            this.opt11.TabStop = true;
-            this.opt11.UseVisualStyleBackColor = true;
-            // 
-            // opt12
-            // 
-            this.opt12.AutoSize = true;
-            this.opt12.Location = new System.Drawing.Point(351, 19);
-            this.opt12.Name = "opt12";
-            this.opt12.Size = new System.Drawing.Size(14, 13);
-            this.opt12.TabIndex = 9;
-            this.opt12.TabStop = true;
-            this.opt12.UseVisualStyleBackColor = true;
-            // 
-            // opt13
-            // 
-            this.opt13.AutoSize = true;
-            this.opt13.Location = new System.Drawing.Point(382, 19);
-            this.opt13.Name = "opt13";
-            this.opt13.Size = new System.Drawing.Size(14, 13);
-            this.opt13.TabIndex = 10;
-            this.opt13.TabStop = true;
-            this.opt13.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(210, 40);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 13);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Mania";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(316, 40);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Encore";
-            // 
-            // btnChar1
-            // 
-            this.btnChar1.Location = new System.Drawing.Point(79, 162);
-            this.btnChar1.Name = "btnChar1";
-            this.btnChar1.Size = new System.Drawing.Size(30, 28);
-            this.btnChar1.TabIndex = 19;
-            this.btnChar1.Text = "1";
-            this.btnChar1.UseVisualStyleBackColor = true;
-            // 
-            // btnChar2
-            // 
-            this.btnChar2.Location = new System.Drawing.Point(110, 162);
-            this.btnChar2.Name = "btnChar2";
-            this.btnChar2.Size = new System.Drawing.Size(30, 28);
-            this.btnChar2.TabIndex = 20;
-            this.btnChar2.Text = "2";
-            this.btnChar2.UseVisualStyleBackColor = true;
-            // 
-            // btnChar3
-            // 
-            this.btnChar3.Location = new System.Drawing.Point(141, 162);
-            this.btnChar3.Name = "btnChar3";
-            this.btnChar3.Size = new System.Drawing.Size(30, 28);
-            this.btnChar3.TabIndex = 21;
-            this.btnChar3.Text = "3";
-            this.btnChar3.UseVisualStyleBackColor = true;
-            // 
-            // btnChar4
-            // 
-            this.btnChar4.Location = new System.Drawing.Point(172, 162);
-            this.btnChar4.Name = "btnChar4";
-            this.btnChar4.Size = new System.Drawing.Size(30, 28);
-            this.btnChar4.TabIndex = 22;
-            this.btnChar4.Text = "4";
-            this.btnChar4.UseVisualStyleBackColor = true;
-            // 
-            // btnChar5
-            // 
-            this.btnChar5.Location = new System.Drawing.Point(203, 162);
-            this.btnChar5.Name = "btnChar5";
-            this.btnChar5.Size = new System.Drawing.Size(30, 28);
-            this.btnChar5.TabIndex = 23;
-            this.btnChar5.Text = "5";
-            this.btnChar5.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -878,6 +890,7 @@
         private System.Windows.Forms.Button btnChar3;
         private System.Windows.Forms.Button btnChar2;
         private System.Windows.Forms.Button btnChar1;
+        private System.Windows.Forms.ImageList imglstCharIcon;
     }
 }
 

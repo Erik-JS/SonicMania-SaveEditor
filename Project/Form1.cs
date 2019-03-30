@@ -104,7 +104,7 @@ namespace SonicMania_SaveEditor
 
             for (int i = 0; i < _encoreCharButtons.Length; i++)
             {
-                _encoreCharButtons[i].Text = _charDesc[_encoreCurrentChars[i]];
+                _encoreCharButtons[i].ImageIndex = _encoreCurrentChars[i] - 1;
             }
         }
 
@@ -232,7 +232,7 @@ namespace SonicMania_SaveEditor
             Button clickedButton = (Button)sender;
             int idx = (int)clickedButton.Tag;
             _encoreCurrentChars[idx] = (_encoreCurrentChars[idx] + 1) % 6;
-            clickedButton.Text = _charDesc[_encoreCurrentChars[idx]];
+            clickedButton.ImageIndex = _encoreCurrentChars[idx] - 1;
             Savedata.SetEncoreCharacters(_currentSlot, _encoreCurrentChars);
         }
 
