@@ -7,15 +7,21 @@ Get the latest compiled binary here:<br />
 
 -----------------------------------------------------------
 
+This tool has been successfully tested with the [PC version released on Steam](https://store.steampowered.com/app/584400/Sonic_Mania/) and the Nintendo Switch version played under [Yuzu](https://yuzu-emu.org).
+
+-----------------------------------------------------------
+
 ## Locating SaveData.bin
 
-From your Steam install folder, go to `'userdata\«usernumber»\584400\remote'`.
+PC: from your Steam install folder, go to `'userdata\«usernumber»\584400\remote'`.
+
+Yuzu: from your [user directory](https://yuzu-emu.org/wiki/user-directory/), go to `nand\user\save\0000000000000000\«user id»\01009AA000FAA000`.
 
 -----------------------------------------------------------
 
 ## Note about Sonic Mania Plus / Encore DLC
 
-As of version 1.04, all extra content is already included in the game's files and the game only checks if your account owns the DLC through Steam's API.
+As of version 1.04, all extra content is already included in the game's files and the game simply checks if your account owns the DLC through Steam's API.
 
 You may use this tool to set up Mighty and Ray on Mania Mode save slots even if you don't own the Encore DLC, but note that Encore content can only be accessed if you have the required DLC entitlement.
 
