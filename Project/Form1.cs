@@ -61,7 +61,7 @@ namespace SonicMania_SaveEditor
             ofd.Filter = "SaveData.bin|SaveData.bin";
             if (ofd.ShowDialog() != DialogResult.OK)
                 return;
-            if (!Savedata.LoadFromFile(ofd.FileName, true))
+            if (!Savedata.LoadFromFile(ofd.FileName))
                 return;
             _lastHandledFile = ofd.FileName;
             saveToolStripMenuItem.Enabled = true;

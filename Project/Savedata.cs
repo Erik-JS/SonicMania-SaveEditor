@@ -14,7 +14,7 @@ namespace SonicMania_SaveEditor
 
         public static bool IsLittleEndian;
 
-        public static bool LoadFromFile(string file, bool isPCversion)
+        public static bool LoadFromFile(string file)
         {
             try
             {
@@ -25,7 +25,7 @@ namespace SonicMania_SaveEditor
                     return false;
                 }
                 Content = fileContent;
-                IsLittleEndian = isPCversion;
+                DetectEndianness();
                 return true;
             }
             catch(Exception ex)
@@ -33,6 +33,26 @@ namespace SonicMania_SaveEditor
                 MessageBox.Show(ex.GetType().Name + "\n" + ex.Message, "LoadFromFile", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return false;
+        }
+
+        private static void DetectEndianness()
+        {
+            IsLittleEndian = true;
+            int test = 0;
+            for (int i = 0; i < 8; i++)
+                test += GetInt32((0x400 * i) + 0x58);
+            for (int i = 10; i < 13; i++)
+                test += GetInt32((0x400 * i) + 0x58);
+            if (test == 0)
+            {
+                DialogResult MB = MessageBox.Show("Detection of save endianness has failed.\n\nSelect YES for Little-endian. (PC, Switch)\n\nSelect NO for Big-endian. (Wii, PS3)",
+                    "Endianness test", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (MB == DialogResult.No)
+                    IsLittleEndian = false;
+                return;
+            }
+            if (test > 22)
+                IsLittleEndian = false;
         }
 
         public static bool SaveToFile(string file)
