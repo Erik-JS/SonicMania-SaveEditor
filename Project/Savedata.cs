@@ -142,19 +142,21 @@ namespace SonicMania_SaveEditor
             SetInt32((0x400 * slot) + 0x6C, value);
         }
 
-        public static bool IsEmeraldActive(int slot, int emerald)
+        public static bool IsEmeraldActive(int slot, int emeraldId)
         {
-            byte emeralds = Content[(0x400 * slot) + 0x70];
-            int emeraldActive = 1 << emerald;
+            int emeralds = GetInt32((0x400 * slot) + 0x70);
+            int emeraldActive = 1 << emeraldId;
             return (emeralds & emeraldActive) != 0;
         }
-        public static void SetEmeraldState(int slot, int emerald, bool isActive)
+        public static void SetEmeraldState(int slot, int emeraldId, bool isActive)
         {
-            int emeraldActive = 1 << emerald;
+            int emeralds = GetInt32((0x400 * slot) + 0x70);
+            int emeraldActive = 1 << emeraldId;
             if (isActive)
-                Content[(0x400 * slot) + 0x70] |= (byte)emeraldActive;
+                emeralds |= emeraldActive;
             else
-                Content[(0x400 * slot) + 0x70] &= (byte)~(emeraldActive);
+                emeralds &= ~(emeraldActive);
+            SetInt32((0x400 * slot) + 0x70, emeralds);
         }
 
         public static int GetContinues(int slot)
