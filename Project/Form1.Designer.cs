@@ -734,7 +734,7 @@
             // 
             // btnAllBlank
             // 
-            this.btnAllBlank.Location = new System.Drawing.Point(285, 261);
+            this.btnAllBlank.Location = new System.Drawing.Point(285, 258);
             this.btnAllBlank.Name = "btnAllBlank";
             this.btnAllBlank.Size = new System.Drawing.Size(90, 27);
             this.btnAllBlank.TabIndex = 37;

@@ -120,6 +120,12 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lblBlueSpheres.Text" xml:space="preserve">
+    <value>These buttons *do not* represent the in-game medal screen!
+They represent the actual, internal order of the bonus stages as they are stored inside the save file.
+The in-game view comes from the silver and gold counts, where gold medals overlap silver ones.
+Bonus content is locked/unlocked according to number of medals.</value>
+  </data>
   <metadata name="imglstCharIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
@@ -128,7 +134,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACO
-        DgAAAk1TRnQBSQFMAgEBBQEAARABAAEQAQABEgEAARIBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DgAAAk1TRnQBSQFMAgEBBQEAARgBAAEYAQABEgEAARIBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABSAMAASQDAAEBAQABCAUAASABChgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -192,11 +198,5 @@
         AQABGAEAAQ4BAAEBAwAB4AECAeABcAE8AQABHwEAAQMDAAH4AR8B4QH5Af4BAAE/AYABHwMABf8BgAH/
         AeABfwMACf8DAAs=
 </value>
-  </data>
-  <data name="lblBlueSpheres.Text" xml:space="preserve">
-    <value>These buttons *do not* represent the in-game medal screen!
-They represent the actual, internal order of the bonus stages as they are stored inside the save file.
-The in-game view comes from the silver and gold counts, where gold medals overlap silver ones.
-Bonus content is locked/unlocked according to number of medals.</value>
   </data>
 </root>
